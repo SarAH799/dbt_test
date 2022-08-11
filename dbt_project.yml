@@ -37,3 +37,7 @@ models:
     stage:
       materialized: table
       database: raw
+      
+    publish:
+      materialized: table
+      database: raw

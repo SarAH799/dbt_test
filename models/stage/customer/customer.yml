@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: customer
+    description: "{{ doc('CUSTOMER_docs') }}"
+    database: RAW
+    schema: STAGE
+    columns:
+      - name: C_CUSTKEY
+        tests:
+          - unique
+          - not_null
+      - name: C_NATIONKEY
+        tests:
+          - not_null
